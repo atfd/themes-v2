@@ -17,3 +17,10 @@
 + if I change the `theme:` setting in a site’s `_sv_settings.txt` file, SV will know what to do with content, components, and customizations.
 
 [Add theme-specific updates]
+
+## Legacy (v1) Themes
+Sites using legacy (v1) themes will stay the same.
+
+In most cases, migrating a site will be fairly easy. You can test it by making a new (v2) site and copy all the **content** files into the new site folder.
+
+Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.

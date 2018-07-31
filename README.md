@@ -24,3 +24,7 @@ Sites using legacy (v1) themes will stay the same.
 In most cases, migrating a site will be fairly easy. You can test it by making a new (v2) site and copy all the **content** files into the new site folder.
 
 Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
+
+## Notes
++ `_sv_reset.css`
++ prefix/namespace `sv_custom.css` starter styles with theme

@@ -8,13 +8,13 @@
   + class names
   + HTML structure
   + UI components
-+ some themes have Components enabled by default, but any theme will be able to interpet the standard set of components
-+ Themes use a widely-adpoted and supported framework (Bootstrap 4) for easy customization
++ some themes have Components enabled by default, but any theme will be able to interpret the standard set of components
++ Themes use ~~a widely-adopted and supported framework (Bootstrap 4)~~ CSS wherever possible (as oppposed to frameworks for easy customization
 + `_sv_custom.css` files now have many more helpers included by default to make common customizations easy. For example, these might be things like:
   + changing the background color or typeface of your site
   + hiding the info link
-  + changing the width/alignemtn of a text column
-+ if I change the `theme:` setting in a site’s `_sv_settings.txt` file, SV will know what to do with content, components, and customizations.
+  + changing the width/alignment of a text column
++ if I change the `theme:` setting in a site’s `_sv_settings.txt` file, SV will know what to do with content, Components, and customizations.
 
 [Add theme-specific updates]
 
@@ -28,3 +28,19 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 ## Notes
 + `_sv_reset.css`
 + prefix/namespace `sv_custom.css` starter styles with theme
+
+<hr>
+## Developing
+
+### SCSS
+- `_sv_custom_themename` files are the styles supplied in the `_sv_custom.css` file by default when creating a new theme
+
+### Naming
+- all theme classes are prefixed with `sv-`
+
+<hr>
+## User docs (WIP)
+- Integrating Bootstrap or other libraries
+
+<hr>
+## To do

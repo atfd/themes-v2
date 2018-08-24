@@ -1,0 +1,66 @@
+
+/*
+// global variables
+*/
+
+// breakpoints
+$screen-xs-min:                          0 !default;
+$screen-sm-min:                          576px !default;
+$screen-md-min:                          768px !default;
+$screen-lg-min:                          1200px !default;
+$screen-xl-min:                          1500px !default;
+$screen-xxl-min:                         1800px !default;
+
+/*
+// imports
+*/
+
+// global
+@import 'scss/lib_normalize';
+
+// development tools
+@import 'scss/development';
+
+// themes
+@import 'scss/theme_document';
+@import 'scss/theme_feed';
+@import 'scss/theme_slideshow';
+
+// sv custom defaults
+@import 'scss/sv_custom_document';
+@import 'scss/sv_custom_feed';
+@import 'scss/sv_custom_slideshow';
+
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+
+  .touch & {
+    cursor: pointer;
+
+    div {
+      cursor: pointer;
+    }
+  }
+}
+
+::selection {
+  background: red;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+// fonts
+// $font-filepath:                          "_assets/fonts/";
+// $font-primary-src:                       #{$font-filepath}GT-America-Regular;
+// $font-primary-name:                      "GT America";
+
+@font-face {
+  font-family: $font-primary-name;
+  src: url('#{$font-primary-src}') format('woff2'),
+       url('#{$font-primary-src}') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -37,6 +37,11 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 
 ### Naming
 - all theme classes are prefixed with `sv-`
+- `sv-block-` – these are groups of content
+- `sv-media-` – files have class of `sv-media-*` where `*` is the file extension
+- `sv-module-` – these are groups of interface components
+
+### Implementation notes
 
 <hr>
 ## User docs (WIP)

@@ -11,15 +11,52 @@ $screen-lg-min:                          1200px !default;
 $screen-xl-min:                          1500px !default;
 $screen-xxl-min:                         1800px !default;
 
+// color
+$color-black: #000;
+$color-gray: gray;
+
+// layout
+$gutter-xs: 10px;
+$gutter-sm: 20px;
+
+$text-column-width: 55%;
+
+// typography
+$font-size-base:    20px;
+
+$font-size-xs-sm:   15px;
+$font-size-sm:      15px;
+$font-size-xs-md:   $font-size-base;
+$font-size-md:      $font-size-base;
+$font-size-xs-lg:   30px;
+$font-size-lg:      30px;
+$font-size-xs-xl:   60px;
+$font-size-xl:      60px;
+
+$line-height-base: 1.5;
+
+$font-color-base: $color-black;
+$font-color-disabled: $color-gray;
+
+// navigation
+$nav-height: 50px;
+$nav-logo-size: 30px;
+$nav-logo-radius: 9999999px;
+
 /*
 // imports
 */
 
-// global
-@import 'scss/lib_normalize';
-
 // development tools
 @import 'scss/development';
+
+// libraries
+@import 'scss/lib_normalize';
+
+// global
+@import 'scss/global_typography';
+@import 'scss/global_layout';
+@import 'scss/global_nav';
 
 // themes
 @import 'scss/theme_document';
@@ -63,4 +100,9 @@ body {
   .no-print {
     display: none;
   }
+}
+
+// blame
+.sv-badge {
+  display: none;
 }

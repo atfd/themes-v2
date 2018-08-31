@@ -1,1 +1,25 @@
+// theme: slideshow
+
+.sv-theme-slideshow {
+
+  .sv-content-main {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
 // theme: document
+
+.sv-theme-document {
+
+  .sv-layout {
+    grid-template-areas:
+     "navigation navigation"
+     "siteinfo siteinfo"
+     "sidenav contentmain";
+  }
+
+  .sv-content-main {
+    // grid-template-columns: $text-column-width;
+    // justify-content: center;
+  }
+}

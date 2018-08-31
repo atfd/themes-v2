@@ -1,0 +1,51 @@
+.sv-layout {
+  // background: yellow;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+   "navigation"
+   "siteinfo"
+   "sidenav"
+   "contentmain";
+}
+
+.sv-layout-section {
+  display: grid;
+  padding: ($gutter-sm / 2) $gutter-sm;
+}
+
+.sv-navigation {
+  // background: red;
+
+  grid-area: navigation;
+}
+
+.sv-siteinfo {
+  // background: blue;
+
+  grid-area: siteinfo;
+}
+
+.sv-sidenav {
+  // background: green;
+
+  grid-area: sidenav;
+}
+
+.sv-content-main {
+  // background: gray;
+
+  grid-area: contentmain;
+  // display: grid;
+  // grid-template-columns: repeat(12, 1fr);
+  // grid-template-rows: auto;
+  // grid-gap: $gutter-sm;
+  // object-fit: cover;
+
+
+  .sv-block {
+    // grid-area: block;
+  }
+}

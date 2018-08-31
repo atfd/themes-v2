@@ -1,0 +1,599 @@
+// //////////////////////
+// // type setup
+// @mixin font-primary {
+//   font-family: $font-primary-family;
+// }
+//
+// @mixin font-mono {
+//   font-family: $font-mono-family;
+// }
+//
+// .text-primary {@include font-primary;}
+// .text-mono {@include font-mono};
+//
+// //////////////////////
+// // default type styles
+// * {
+//   font-weight: normal;
+//   font-style: normal;
+//   margin: 0;
+//   padding: 0;
+//   text-transform: none;
+// }
+//
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  // color: $color-type-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $font-color-base;
+  // line-height: $text-line-base;
+  // letter-spacing: $text-letter-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+//
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6, {
+//   color: $color-text-primary;
+//   letter-spacing: $text-letter-base;
+//   line-height: $text-line-base;
+//   font-size: $text-xs-lg;
+//
+//   @include sm {
+//     font-size: $text-lg;
+//   }
+// }
+//
+// p,
+// li,
+// span,
+// blockquote,
+// a {
+//   letter-spacing: $text-letter-base;
+//   line-height: $text-line-base;
+//   font-size: $text-xs-base;
+//   color: $color-base;
+//
+//   @include sm {
+//     font-size: $text-base;
+//   }
+// }
+//
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-position: inside;
+  }
+}
+//
+// i, em {
+//
+//   b, strong {
+//
+//   }
+// }
+//
+// b, strong {
+//   //
+//   i, em {
+//
+//   }
+// }
+//
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:visited,
+  &:hover {
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+//
+// code,
+// pre {
+//   @include font-mono;
+//   color: $color-base;
+// }
+//
+// pre {
+//   background: $color-gray;
+//   width: 100%;
+//   overflow-x: scroll;
+// }
+//
+// hr {
+//   background: transparent;
+//   border-top: $border-base;
+// }
+//
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+//
+//   * {
+//     text-align: left;
+//   }
+//
+//   tr {
+//     height: $space-md;
+//   }
+// }
+//
+// //////////////////////
+// // T-SET – `.t-set`
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   &.t-set {
+//     line-height: $text-line-sm;
+//   }
+// }
+//
+// h1 {
+//   &.t-set {
+//     font-size: $text-xs-xxl;
+//
+//     @include sm {
+//       font-size: $text-xxl;
+//     }
+//   }
+// }
+//
+// h2 {
+//   &.t-set {
+//     font-size: $text-xs-xl;
+//
+//     @include sm {
+//       font-size: $text-xl;
+//     }
+//   }
+// }
+//
+// h3 {
+//   &.t-set {
+//     font-size: $text-xs-lg;
+//
+//     @include sm {
+//       font-size: $text-lg;
+//     }
+//   }
+// }
+//
+// h4 {
+//   &.t-set {
+//     font-size: $text-xs-md;
+//
+//     @include sm {
+//       font-size: $text-md;
+//     }
+//   }
+// }
+//
+// h5 {
+//   &.t-set {
+//     font-size: $text-xs-sm;
+//
+//     @include sm {
+//       font-size: $text-sm;
+//     }
+//   }
+// }
+//
+// h6 {
+//   &.t-set {
+//     font-size: $text-xs-xxs;
+//
+//     @include sm {
+//       font-size: $text-xxs;
+//     }
+//   }
+// }
+//
+// p,
+// li {
+//   &.t-set {
+//     @extend .t-hyphenate;
+//     font-size: $text-base;
+//     letter-spacing: $text-letter-base;
+//     line-height: $text-line-base;
+//
+//     > a {
+//       border-bottom: 1px solid $color-base;
+//
+//       &:active,
+//       &:target {
+//         color: inherit;
+//         text-decoration: none;
+//       }
+//
+//       &:hover {
+//         text-decoration: none;
+//       }
+//
+//       &:visited {
+//         border: 0;
+//         text-decoration: line-through;
+//         color: inherit;
+//       }
+//     }
+//   }
+// }
+//
+// ol, ul {
+//   &.t-set {
+//     margin-bottom: 0;
+//
+//     ol, ul {
+//       margin-left: $space-md;
+//     }
+//   }
+// }
+//
+// ol {
+//   &.t-set {
+//     list-style: decimal;
+//
+//     ol {
+//
+//       li {
+//         list-style: lower-roman;
+//       }
+//     }
+//
+//     ul {
+//
+//       li {
+//         list-style: disc;
+//       }
+//     }
+//   }
+// }
+//
+// ul {
+//   &.t-set {
+//     list-style: disc;
+//
+//     ol {
+//
+//       li {
+//         list-style: decimal;
+//       }
+//     }
+//
+//     ul {
+//
+//       li {
+//         list-style: circle;
+//       }
+//     }
+//   }
+// }
+//
+// a {
+//   &.t-set {
+//     text-decoration: none;
+//   }
+// }
+//
+// blockquote {
+//   &.t-set {
+//     font-size: $text-md;
+//     padding: $space-md;
+//   }
+// }
+//
+// hr {
+//   &.t-set {
+//     margin: $space-md 0;
+//     background: transparent;
+//     border-top: $border-base;
+//   }
+// }
+//
+// // these objects will never have a class of `.t-set` but will often have a parent with class `.t-set`
+// .t-set {
+//
+//   img {
+//     margin: $space-md 0;
+//     max-width: 100%;
+//     width: 100%;
+//   }
+//
+//   small {
+//     font-size: 80%;
+//   }
+//
+//   sup {
+//     margin-left: 6px;
+//     font-size: 40%;
+//     vertical-align: super;
+//
+//     a {
+//       text-decoration: none;
+//     }
+//   }
+//
+//   table {
+//     margin: $space-md 0;
+//
+//     thead {
+//       border-top: $border-base;
+//       border-bottom: $border-base;
+//     }
+//
+//     tbody {
+//       border-bottom: $border-base;
+//     }
+//
+//     tr {
+//       height: $space-md;
+//       border-bottom: $border-base;
+//     }
+//
+//     th, td {
+//       border-right: $border-base;
+//       padding: $space-xs;
+//
+//       &:last-child {
+//         border-right: none;
+//       }
+//     }
+//   }
+//
+//   // these object simply extend objects with `.t-set` class to children with parents `.t-set`
+//   // h1 {
+//   //   // `.t-set` things
+//   // }
+//   //
+//   // will be the same as
+//   //
+//   // .t-set {
+//   //   h1 {
+//   //     // `.t-set` things
+//   //   }
+//   // }
+//   h1 {@extend h1.t-set;}
+//   h2 {@extend h2.t-set;}
+//   h3 {@extend h3.t-set;}
+//   h4 {@extend h4.t-set;}
+//   h5 {@extend h5.t-set;}
+//   h6 {@extend h6.t-set;}
+//   p, li {@extend p.t-set;}
+//   ol {@extend ol.t-set;}
+//   ul {@extend ul.t-set;}
+//   a {@extend a.t-set;}
+//   blockquote {@extend blockquote.t-set;}
+//   hr {@extend hr.t-set;}
+// }
+//
+// ////////////////////////////////////////////
+// // T-SET + T-READING - `.t-set.t-reading`
+// .t-reading {
+//
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6 {
+//     margin-top: $space-md;
+//     margin-bottom: $space-md;
+//   }
+//
+//   h1 {
+//   }
+//
+//   h2 {
+//   }
+//
+//   h3 {
+//   }
+//
+//   h4 {
+//   }
+//
+//   h5 {
+//   }
+//
+//   h6 {
+//   }
+//
+//   p {
+//     margin-bottom: $space-sm;
+//
+//     &:last-of-type {
+//       margin-bottom: 0;
+//     }
+//
+//     em {
+//       //
+//     }
+//
+//     strong {
+//       //
+//     }
+//
+//     em strong {
+//       //
+//     }
+//   }
+//
+//   em {
+//     //
+//   }
+//
+//   strong {
+//     //
+//   }
+//
+//   em strong {
+//     //
+//   }
+//
+//   ul,
+//   ol {
+//     margin-bottom: $space-sm;
+//
+//     ul, ol {
+//       margin-bottom: 0;
+//     }
+//   }
+//
+//   a {
+//     text-transform: uppercase;
+//   }
+//
+//   blockquote {
+//     font-size: $text-lg;
+//   }
+// }
+//
+// ////////////////////////////////////////////
+// // T-SET + T-READING + T-VARIABLE - `.t-set.t-reading.t-variable`
+// .t-variable {
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6 {
+//     &.t-variable {
+//       line-height: $text-line-sm;
+//     }
+//   }
+//
+//   h1 {
+//     &.t-variable {
+//       font-size: $text-xs-xxl;
+//
+//       @include sm {
+//         font-size: $text-v-xl;
+//       }
+//     }
+//   }
+//
+//   h2 {
+//     &.t-variable {
+//       font-size: $text-xs-xl;
+//
+//       @include sm {
+//         font-size: $text-v-xl;
+//       }
+//     }
+//   }
+//
+//   h3 {
+//     &.t-variable {
+//       font-size: $text-xs-lg;
+//
+//       @include sm {
+//         font-size: $text-v-lg;
+//       }
+//     }
+//   }
+//
+//   h4 {
+//     &.t-variable {
+//       font-size: $text-xs-md;
+//
+//       @include sm {
+//         font-size: $text-v-md;
+//       }
+//     }
+//   }
+//
+//   h5 {
+//     &.t-variable {
+//       font-size: $text-xs-sm;
+//
+//       @include sm {
+//         font-size: $text-v-sm;
+//       }
+//     }
+//   }
+//
+//   h6 {
+//     &.t-variable {
+//       font-size: $text-xs-xs;
+//
+//       @include sm {
+//         font-size: $text-v-xs;
+//       }
+//     }
+//   }
+//
+//   p,
+//   li {
+//     &.t-variable {
+//       @extend .t-hyphenate;
+//       font-size: $text-v-base;
+//       letter-spacing: $text-letter-base;
+//       line-height: $text-line-base;
+//
+//       > a {
+//         border-bottom: 1px solid $color-base;
+//
+//         &:active,
+//         &:target {
+//           color: inherit;
+//           text-decoration: none;
+//         }
+//
+//         &:hover {
+//           text-decoration: none;
+//         }
+//
+//         &:visited {
+//           border: 0;
+//           text-decoration: line-through;
+//           color: inherit;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// // typographic helpers
+// .t-disabled {
+//   color: $color-disabled;
+//
+//   a {
+//     pointer-events: none;
+//     cursor: not-allowed;
+//   }
+// }
+//
+// .t-indented {
+//   text-indent: $text-md;
+//
+//   p,
+//   p & {
+//     text-indent: $text-md;
+//   }
+// }
+//
+// .t-indented-none
+// .t-indented-0 {
+//   text-indent: 0;
+//
+//   p,
+//   p & {
+//     text-indent: 0;
+//   }
+// }

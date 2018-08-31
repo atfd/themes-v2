@@ -1,28 +1,29 @@
-.nav,
-.footer {
- width: 100%;
- position: relative;
- z-index: 1002;
- height: $space-md;
+.sv-navigation {
+  height: $nav-height;
+  grid-template-areas:
+  "navhome navlinks navlinks";
 
-  .inner {
-    width: 100%;
-   padding: $space-xs;
+  .sv-navigation-column {
+    display: flex;
+    align-items: center;
+
+    .sv-navigation-link + .sv-navigation-link {
+      margin-left: $gutter-sm;
+    }
   }
 
-  p,
-  h1 {
-    font-size: $text-sm;
+  .sv-navigation-home {
+    grid-area: navhome;
+
+    img.sv-navigation-logo {
+      height: $nav-logo-size;
+      width: $nav-logo-size;
+      border-radius: $nav-logo-radius;
+    }
   }
 
-  a {
-
-    &.active {
-      border-bottom: $border-base;
-    }
-
-    &:hover {
-
-    }
+  .sv-navigation-links {
+    grid-area: navlinks;
+    justify-content: flex-end;
   }
 }

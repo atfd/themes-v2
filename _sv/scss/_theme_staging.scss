@@ -23,8 +23,16 @@ $navigation-items-alignment: end;
      // grid-template-columns: 100%;
     // grid-template-rows: $nav-height $document-sidebar-unit-height $document-sidebar-unit-height;
     // grid-auto-rows: minmax(100px, 100vh);
-
     @include media-breakpoint-up(sm) {
+      grid-template-areas:
+       "navigation navigation"
+       "siteinfo siteinfo"
+       "sidenav contentmain"
+       ". contentmain";
+      grid-template-columns: $sidebar-width auto;
+    }
+
+    @include media-breakpoint-up(md) {
       grid-template-areas:
        "navigation navigation"
        "siteinfo contentmain"
@@ -36,14 +44,14 @@ $navigation-items-alignment: end;
 
   .sv-siteinfo {
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       height: $document-sidebar-unit-height;
     }
   }
 
   .sv-sidenav {
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       align-items: $navigation-items-alignment;
       height: $document-sidebar-unit-height;
     }
@@ -56,7 +64,7 @@ $navigation-items-alignment: end;
   .sv-content-main {
 
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       grid-template-columns: $text-column-width;
     }
   }

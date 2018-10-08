@@ -9,14 +9,6 @@
     "navhome navlinks navlinks";
   }
 
-  &.sv-navigation-is-open {
-    height: auto;
-  }
-
-  &.sv-navigation-is-closed {
-    height: $nav-height;
-  }
-
   .sv-navigation-column {
     display: flex;
   }
@@ -62,5 +54,14 @@
         margin-left: $gutter-sm;
       }
     }
+  }
+
+  // open and close navigation
+  &.sv-is-open {
+    height: auto;
+  }
+
+  &.sv-is-closed {
+    height: $nav-height;
   }
 }

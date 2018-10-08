@@ -1,11 +1,11 @@
 .sv-ui-expansion {
 
-  &.sv-ui-expansion-is-open {
+  &.sv-ui-expansion-expanded {
     &::before {
       content: "↑";
     }
   }
-  &.sv-ui-expansion-is-closed {
+  &.sv-ui-expansion-closed {
     &::before {
       content: "↓";
     }

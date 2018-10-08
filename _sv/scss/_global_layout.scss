@@ -1,5 +1,4 @@
 .sv-layout {
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -62,6 +61,15 @@
     @include media-breakpoint-up(sm) {
       display: none;
     }
+  }
+
+  // open and close sidenav
+  &.sv-is-open {
+    height: auto;
+  }
+
+  &.sv-is-closed {
+    height: $nav-height;
   }
 }
 

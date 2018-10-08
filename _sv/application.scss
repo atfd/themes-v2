@@ -2,9 +2,6 @@
 // imports: setup
 */
 
-// development tools
-@import 'scss/development';
-
 // libraries
 @import 'scss/lib_normalize';
 @import 'scss/bootstrap-4.1.3/bootstrap';
@@ -34,7 +31,7 @@ $space-xxl: 160px;
 $gutter-xs: $space-xs;
 $gutter-sm: $space-sm;
 
-$text-column-width: 55%;
+$text-column-width: 100%;
 
 // color
 $color-black: #000;
@@ -68,6 +65,9 @@ $nav-logo-radius: 9999999px;
 /*
 // imports: styles
 */
+
+// development tools
+@import 'scss/development';
 
 // global
 @import 'scss/global_typography';

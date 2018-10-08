@@ -39,15 +39,95 @@
     <![endif]-->
   </head>
 
-  <body class="sv-site-name sv-theme -sv-theme-slideshow sv-theme-document" id="id-">
-    <!-- <div class="dev-ui">
-      <ul>
-        <li><a href="#" class="js-change-theme" id="make-slideshow">Slideshow</a></li>
-      </ul>
-    </div> -->
+  <body class="sv-site-name sv-theme has-toolbar sv-theme-slideshow" id="id-">
+
+    <script>
+  $(document).ready(function(){
+
+    $('.make-document').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-document');
+    });
+
+    $('.make-feed').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-feed');
+    });
+
+    $('.make-slideshow').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-slideshow');
+    });
+
+    $('.make-ecommerce').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-ecommerce');
+    });
+
+    $('.make-blog').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-blog');
+    });
+
+    $('.make-portfolio').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-portfolio');
+    });
+
+    $('.make-campaign').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-campaign');
+    });
+
+    $('.make-presentation').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-presentation');
+    });
+
+    $('.close-toolbar').click(function(){
+      $(".sv-development-toolbar").hide();
+      $('body').removeClass('has-toolbar')
+    });
+
+  });
+</script>
+
+<div class="sv-development-toolbar">
+  <ul>
+    <li>SV Toolbar</li>
+    <li class="make-document"><a href="theme-document.html">Document</a></li>
+    <li class="make-feed"><a href="theme-feed.html">Feed</a></li>
+    <li class="make-slideshow"><a href="theme-slideshow.html">Slideshow</a></li>
+    <li class="make-ecommerce"><a href="theme-ecommerce.html">Ecommerce</a></li>
+    <li class="make-blog"><a href="theme-blog.html">Blog</a></li>
+    <li class="make-portfolio"><a href="theme-portfolio.html">Portfolio</a></li>
+    <li class="make-campaign"><a href="theme-campaign.html">Campaign</a></li>
+    <li class="make-presentation"><a href="theme-presentation.html">Presentation</a></li>
+    <li class="close-toolbar" style="float:right;">Close</li>
+  </ul>
+</div>
+
+
     <!-- <div class="loader" id="loader">
       <div class="loader-loading"></div>
     </div> -->
+
     <div class="sv-layout">
 
       <div class="sv-layout-section sv-navigation sv-is-closed">
@@ -87,15 +167,16 @@
 
 
       <div class="sv-layout-section sv-content-main">
-        <ul>
-  <li><a href="theme-feed.html">Feed</a></li>
+        <h1>Small Victories Themes Staging</h1>
+<ul>
   <li><a href="theme-document.html">Document</a></li>
+  <li><a href="theme-feed.html">Feed</a></li>
   <li><a href="theme-slideshow.html">Slideshow</a></li>
-  <li><a href="theme-.html">Ecommerce</a></li>
-  <li><a href="theme-.html">Feed</a></li>
-  <li><a href="theme-.html">Feed</a></li>
-  <li><a href="theme-.html">Feed</a></li>
-  <li><a href="theme-.html">Feed</a></li>
+  <li><a href="theme-ecommerce.html">Ecommerce</a></li>
+  <li><a href="theme-blog.html">Blog</a></li>
+  <li><a href="theme-portfolio.html">Portfolio</a></li>
+  <li><a href="theme-campaign.html">Campaign</a></li>
+  <li><a href="theme-presentation.html">Presentation</a></li>
 </ul>
 
       </div>
@@ -106,6 +187,7 @@
 </div>
 
 
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="../_sv/js/_development.js"></script>
     <script type="text/javascript" src="application.min.js"></script>
   </body>

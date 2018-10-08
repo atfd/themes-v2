@@ -1,0 +1,81 @@
+<script>
+  $(document).ready(function(){
+
+    $('.make-document').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-document');
+    });
+
+    $('.make-feed').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-feed');
+    });
+
+    $('.make-slideshow').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-slideshow');
+    });
+
+    $('.make-ecommerce').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-ecommerce');
+    });
+
+    $('.make-blog').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-blog');
+    });
+
+    $('.make-portfolio').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-portfolio');
+    });
+
+    $('.make-campaign').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-campaign');
+    });
+
+    $('.make-presentation').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-presentation');
+    });
+
+    $('.close-toolbar').click(function(){
+      $(".sv-development-toolbar").hide();
+      $('body').removeClass('has-toolbar')
+    });
+
+  });
+</script>
+
+<div class="sv-development-toolbar">
+  <ul>
+    <li>SV Toolbar</li>
+    <li class="make-document"><a href="theme-document.html">Document</a></li>
+    <li class="make-feed"><a href="theme-feed.html">Feed</a></li>
+    <li class="make-slideshow"><a href="theme-slideshow.html">Slideshow</a></li>
+    <li class="make-ecommerce"><a href="theme-ecommerce.html">Ecommerce</a></li>
+    <li class="make-blog"><a href="theme-blog.html">Blog</a></li>
+    <li class="make-portfolio"><a href="theme-portfolio.html">Portfolio</a></li>
+    <li class="make-campaign"><a href="theme-campaign.html">Campaign</a></li>
+    <li class="make-presentation"><a href="theme-presentation.html">Presentation</a></li>
+    <li class="close-toolbar" style="float:right;">Close</li>
+  </ul>
+</div>

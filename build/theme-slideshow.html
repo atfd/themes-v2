@@ -39,15 +39,95 @@
     <![endif]-->
   </head>
 
-  <body class="sv-site-name sv-theme -sv-theme-slideshow sv-theme-document" id="id-">
-    <!-- <div class="dev-ui">
-      <ul>
-        <li><a href="#" class="js-change-theme" id="make-slideshow">Slideshow</a></li>
-      </ul>
-    </div> -->
+  <body class="sv-site-name sv-theme has-toolbar sv-theme-slideshow" id="id-">
+
+    <script>
+  $(document).ready(function(){
+
+    $('.make-document').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-document');
+    });
+
+    $('.make-feed').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-feed');
+    });
+
+    $('.make-slideshow').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-slideshow');
+    });
+
+    $('.make-ecommerce').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-ecommerce');
+    });
+
+    $('.make-blog').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-blog');
+    });
+
+    $('.make-portfolio').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-portfolio');
+    });
+
+    $('.make-campaign').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-campaign');
+    });
+
+    $('.make-presentation').click(function(){
+      $('body').removeClass (function (index, className) {
+        return (className.match (/(^|\s)sv-theme-\S+/g) || []).join(' ');
+      });
+      $('body').addClass('sv-theme-presentation');
+    });
+
+    $('.close-toolbar').click(function(){
+      $(".sv-development-toolbar").hide();
+      $('body').removeClass('has-toolbar')
+    });
+
+  });
+</script>
+
+<div class="sv-development-toolbar">
+  <ul>
+    <li>SV Toolbar</li>
+    <li class="make-document"><a href="theme-document.html">Document</a></li>
+    <li class="make-feed"><a href="theme-feed.html">Feed</a></li>
+    <li class="make-slideshow"><a href="theme-slideshow.html">Slideshow</a></li>
+    <li class="make-ecommerce"><a href="theme-ecommerce.html">Ecommerce</a></li>
+    <li class="make-blog"><a href="theme-blog.html">Blog</a></li>
+    <li class="make-portfolio"><a href="theme-portfolio.html">Portfolio</a></li>
+    <li class="make-campaign"><a href="theme-campaign.html">Campaign</a></li>
+    <li class="make-presentation"><a href="theme-presentation.html">Presentation</a></li>
+    <li class="close-toolbar" style="float:right;">Close</li>
+  </ul>
+</div>
+
+
     <!-- <div class="loader" id="loader">
       <div class="loader-loading"></div>
     </div> -->
+
     <div class="sv-layout">
 
       <div class="sv-layout-section sv-navigation sv-is-closed">
@@ -89,11 +169,9 @@
       <div class="sv-layout-section sv-content-main">
         <!-- theme: slideshow -->
 
-<!-- if image has caption, wrap both -->
-<div class="sv-block sv-block-image-with-caption">
-  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
-
-  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
 
 </div>
 
@@ -105,11 +183,13 @@
 
 </div>
 
-<!-- if image has caption, wrap both -->
-<div class="sv-block sv-block-image-with-caption">
-  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+<div class="sv-block sv-block-text sv-media-md">
+	<p>The <a href="https://en.wikipedia.org/wiki/Bauhaus">Bauhaus</a> was founded by Walter Gropius in Weimar. The German term Bauhaus—literally &quot;construction house&quot;—was understood as meaning &quot;School of Building&quot;, but in spite of its name and the fact that its founder was an architect, the Bauhaus did not have an architecture department during its first years of existence. Nonetheless, it was founded with the idea of creating a &quot;total&quot; work of art (Gesamtkunstwerk) in which all arts, including architecture, would eventually be brought together. <strong>The Bauhaus style later became one of the most influential currents in modern design</strong>, Modernist architecture and art, design and architectural education. The Bauhaus had a profound influence upon subsequent developments in art, architecture, graphic design, interior design, industrial design, and typography.</p>
+</div>
 
-  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
 
 </div>
 
@@ -121,11 +201,9 @@
 
 </div>
 
-<!-- if image has caption, wrap both -->
-<div class="sv-block sv-block-image-with-caption">
-  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
-
-  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
 
 </div>
 
@@ -137,11 +215,9 @@
 
 </div>
 
-<!-- if image has caption, wrap both -->
-<div class="sv-block sv-block-image-with-caption">
-  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
-
-  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
 
 </div>
 
@@ -153,11 +229,9 @@
 
 </div>
 
-<!-- if image has caption, wrap both -->
-<div class="sv-block sv-block-image-with-caption">
-  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
-
-  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
 
 </div>
 
@@ -169,6 +243,12 @@
 
 </div>
 
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
 <!-- if image has caption, wrap both -->
 <div class="sv-block sv-block-image-with-caption">
   <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
@@ -176,6 +256,148 @@
   <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
 
 </div>
+
+<div class="sv-block sv-block-text sv-media-md">
+	<p>The <a href="https://en.wikipedia.org/wiki/Bauhaus">Bauhaus</a> was founded by Walter Gropius in Weimar. The German term Bauhaus—literally &quot;construction house&quot;—was understood as meaning &quot;School of Building&quot;, but in spite of its name and the fact that its founder was an architect, the Bauhaus did not have an architecture department during its first years of existence. Nonetheless, it was founded with the idea of creating a &quot;total&quot; work of art (Gesamtkunstwerk) in which all arts, including architecture, would eventually be brought together. <strong>The Bauhaus style later became one of the most influential currents in modern design</strong>, Modernist architecture and art, design and architectural education. The Bauhaus had a profound influence upon subsequent developments in art, architecture, graphic design, interior design, industrial design, and typography.</p>
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- webloc bookmark -->
+<div class="sv-block sv-block-webloc">
+  <a href="http://www.smallvictori.es">Small Victories</a>
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<div class="sv-block sv-block-text sv-media-md">
+	<p>The <a href="https://en.wikipedia.org/wiki/Bauhaus">Bauhaus</a> was founded by Walter Gropius in Weimar. The German term Bauhaus—literally &quot;construction house&quot;—was understood as meaning &quot;School of Building&quot;, but in spite of its name and the fact that its founder was an architect, the Bauhaus did not have an architecture department during its first years of existence. Nonetheless, it was founded with the idea of creating a &quot;total&quot; work of art (Gesamtkunstwerk) in which all arts, including architecture, would eventually be brought together. <strong>The Bauhaus style later became one of the most influential currents in modern design</strong>, Modernist architecture and art, design and architectural education. The Bauhaus had a profound influence upon subsequent developments in art, architecture, graphic design, interior design, industrial design, and typography.</p>
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+<!-- block img 3:4 -->
+<div class="sv-block sv-block-image">
+  <img src="_assets/images/_placeholder-3-4.svg" alt="3:4 test image" />
+
+</div>
+
+<!-- if image has caption, wrap both -->
+<div class="sv-block sv-block-image-with-caption">
+  <img src="_assets/images/_placeholder-4-3.svg" alt="4:3 test image" class="sv-media-svg"/>
+
+  <p class="sv-block-caption sv-media-txt">I’m an image caption</p>
+
+</div>
+
+
 
 
       </div>
@@ -186,6 +408,7 @@
 </div>
 
 
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="../_sv/js/_development.js"></script>
     <script type="text/javascript" src="application.min.js"></script>
   </body>

@@ -15,6 +15,9 @@
   + hiding the info link
   + changing the width/alignment of a text column
 + if I change the `theme:` setting in a site’s `_sv_settings.txt` file, SV will know what to do with content, Components, and customizations.
++ there is a workflow for deploying updates to themes
+  + version number when a new site is made?
+  + should updates only be for new sites going forward?
 
 [Add theme-specific updates]
 
@@ -31,6 +34,10 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 
 <hr>
 ## Developing
+
+### Dependencies
+- Bootstrap CSS
+- Isotope
 
 ### SCSS
 - `_sv_custom_themename` files are the styles supplied in the `_sv_custom.css` file by default when creating a new theme

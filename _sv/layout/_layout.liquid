@@ -39,15 +39,14 @@
     <![endif]-->
   </head>
 
-  <body class="sv-site-name sv-theme -sv-theme-slideshow sv-theme-document" id="id-">
-    <!-- <div class="dev-ui">
-      <ul>
-        <li><a href="#" class="js-change-theme" id="make-slideshow">Slideshow</a></li>
-      </ul>
-    </div> -->
+  <body class="sv-site-name sv-theme has-toolbar sv-theme-slideshow" id="id-">
+
+    {% include 'development_toolbar' %}
+
     <!-- <div class="loader" id="loader">
       <div class="loader-loading"></div>
     </div> -->
+
     <div class="sv-layout">
 
       {% include 'module_navigation' %}
@@ -61,6 +60,7 @@
 
     {% include 'module_svbadge' %}
 
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="../_sv/js/_development.js"></script>
     <script type="text/javascript" src="application.min.js"></script>
   </body>

@@ -17,3 +17,37 @@
 // .sv-content-main {
 // background: gray;
 // }
+
+body.has-toolbar {
+  padding-top: 50px;
+}
+
+.sv-development-toolbar {
+  top: 0;
+  width: 100%;
+  height: $nav-height;
+  background: black;
+  color: white;
+  position: fixed;
+  z-index: 100;
+
+  ul {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  li {
+    width: auto;
+    color: white;
+    display: inline;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  li + li {
+    margin-left: 20px;
+  }
+}

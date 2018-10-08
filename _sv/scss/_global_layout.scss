@@ -76,7 +76,8 @@
 .sv-content-main {
 
   grid-area: contentmain;
-  // display: grid;
+  display: grid;
+  grid-column-gap: $gutter-sm;
   // grid-template-columns: repeat(12, 1fr);
   // grid-template-rows: auto;
   // grid-gap: $gutter-sm;
@@ -85,7 +86,7 @@
 
   .sv-block {
     // grid-area: block;
-    width: auto;
-    display: inline-grid;
+    // width: auto;
+    // display: inline-grid;
   }
 }

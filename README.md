@@ -46,9 +46,10 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 ##### Slideshow
 
 ###### Files
-- _sv_nav.txt (optional)
+- `_sv_nav.txt` (optional)
 
 ### Implementation notes
+- if there is a logo file, show logo nav.
 
 <hr>
 ## User docs (WIP)

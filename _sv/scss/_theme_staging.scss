@@ -8,18 +8,34 @@
 }
 
 // theme: document
+$document-sidebar-unit-height: calc(50vh - (#{$nav-height} / 2));
+$sidebar-width: 25%;
+$navigation-items-alignment: end;
 
 .sv-theme-document {
 
   .sv-layout {
     grid-template-areas:
      "navigation navigation"
-     "siteinfo siteinfo"
-     "sidenav contentmain";
+     "siteinfo contentmain"
+     "sidenav contentmain"
+     ". contentmain";
+    grid-template-columns: $sidebar-width auto;
+    // grid-template-rows: $nav-height $document-sidebar-unit-height $document-sidebar-unit-height;
+    // grid-auto-rows: minmax(100px, 100vh);
+  }
+
+  .sv-siteinfo {
+    height: $document-sidebar-unit-height;
+  }
+
+  .sv-sidenav {
+    height: $document-sidebar-unit-height;
+    align-items: $navigation-items-alignment;
   }
 
   .sv-content-main {
-    // grid-template-columns: $text-column-width;
+    grid-template-columns: $text-column-width;
     // justify-content: center;
   }
 }

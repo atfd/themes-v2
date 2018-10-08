@@ -55,28 +55,28 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 ## Themes
 
 ### Modules
-| Document  |  Feed | Slideshow  |  Ecomm |  Campaign |
-|---|---|---|---|---|
-| Logo  | Default  |   |   |   |
-| Navigation-list  | Default  |   |   |   |
-| Navigation-info  | No  |   |   |   |
-| Table of Contents  |   |   |   |   |
-| Slideshow  |   |   |   |   |
-| Main content  |   |   |   |   |
-| Reading column  |   |   |   |   |
-| Side navigation  | Yes  |   |   |   |
+| Module  | Document  |  Feed | Slideshow  |  Ecomm |  Campaign |  Presentation |  Portfolio |  HTML |
+|---|---|---|---|---|---|---|---|---|
+| Logo  | Default  |   |   |   |   |   |   |   |
+| Navigation-list  | Default  |   |   |   |   |   |   |   |
+| Navigation-info  | No  |   |   |   |   |   |   |   |
+| Table of Contents  |   |   |   |   |   |   |   |   |
+| Slideshow  |   |   |   |   |   |   |   |   |
+| Main content  |   |   |   |   |   |   |   |   |
+| Reading column  |   |   |   |   |   |   |   |   |
+| Side navigation  | Yes  |   |   |   |   |   |   |   |
 
 ### Files
 
-| Document  |  Feed | Slideshow  |  Ecomm |  Campaign |  Presentation |
-|---|---|---|---|---|---|
-| `_sv_settings.txt`  | Default  |   |   |   |   |
-| `_sv_custom.css`  |   |   |   |   |   |
-| `_sv_custom.js`  |   |   |   |   |   |
-| `_sv_nav.txt`  |   |   |   |   |   |
-| `_sv_nav.txt`  |   |   |   |   |   |
-| `favicon.png`  |   |   |   |   |   |
-| `logo.jpg/png`  |   |   |   |   |   |
+| File  | Document  |  Feed | Slideshow  |  Ecomm |  Campaign |  Presentation |  Portfolio |  HTML |
+|---|---|---|---|---|---|---|---|---|
+| `_sv_settings.txt`  | Default  |   |   |   |   |   |   |   |
+| `_sv_custom.css`  |   |   |   |   |   |   |   |   |
+| `_sv_custom.js`  |   |   |   |   |   |   |   |   |
+| `_sv_nav.txt`  |   |   |   |   |   |   |   |   |
+| `_sv_nav.txt`  |   |   |   |   |   |   |   |   |
+| `favicon.png`  |   |   |   |   |   |   |   |   |
+| `logo.jpg/png`  |   |   |   |   |   |   |   |   |
 | Special files  |   |   |   |   | presentation.md  |
 
 <hr>

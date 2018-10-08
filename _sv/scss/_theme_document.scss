@@ -1,1 +1,69 @@
 // theme: document
+$document-sidebar-unit-height: calc(50vh - (#{$nav-height} / 2));
+$sidebar-width: 25%;
+$sidebar-items-alignment: end;
+$text-column-max-width: 660px;
+
+.sv-theme-document {
+
+  .sv-layout {
+
+
+    @include media-breakpoint-up(sm) {
+      grid-template-areas:
+       "navigation navigation"
+       "siteinfo siteinfo"
+       "sidenav contentmain"
+       ". contentmain";
+      grid-template-columns: $sidebar-width auto;
+    }
+
+    @include media-breakpoint-up(md) {
+      grid-template-areas:
+       "navigation navigation"
+       "siteinfo contentmain"
+       "sidenav contentmain"
+       ". contentmain";
+      grid-template-columns: $sidebar-width auto;
+    }
+  }
+
+  .sv-siteinfo {
+
+
+    @include media-breakpoint-up(md) {
+      height: $document-sidebar-unit-height;
+      padding-right: $space-sm;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-right: $space-lg;
+    }
+  }
+
+  .sv-sidenav {
+
+    @include media-breakpoint-up(md) {
+      align-items: $sidebar-items-alignment;
+      height: $document-sidebar-unit-height;
+      padding-right: $space-sm;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-right: $space-lg;
+    }
+
+    li {
+      margin-bottom: $space-xxs;
+    }
+  }
+
+  .sv-content-main {
+
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: $text-column-width;
+      max-width: $text-column-max-width;
+    }
+  }
+}

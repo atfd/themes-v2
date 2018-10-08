@@ -1,4 +1,5 @@
 # Small Victories Default Themes v2
++ preview: https://sv-themes-staging.netlify.com
 
 ## v2 Philosophy
 + v1 Themes were designed as style-agnostic starting points for customization. v2 Themes are designed using a refined Small Victories theme language so that sites feel finished and considered with no further customization, but aren’t overstyled to the point where customizing is difficult.

@@ -1,15 +1,24 @@
 .sv-navigation {
   height: $nav-height;
   grid-template-areas:
-  "navhome navlinks navlinks";
+  "navhome"
+  "navlinks";
+
+  @include media-breakpoint-up(sm) {
+    grid-template-areas:
+    "navhome navlinks navlinks";
+  }
+
+  &.sv-navigation-is-open {
+    height: auto;
+  }
+
+  &.sv-navigation-is-closed {
+    height: $nav-height;
+  }
 
   .sv-navigation-column {
     display: flex;
-    align-items: center;
-
-    .sv-navigation-link + .sv-navigation-link {
-      margin-left: $gutter-sm;
-    }
   }
 
   .sv-navigation-home {
@@ -19,11 +28,39 @@
       height: $nav-logo-size;
       width: $nav-logo-size;
       border-radius: $nav-logo-radius;
+      margin-right: $gutter-sm;
+    }
+
+    .sv-navigation-sitename {
+      flex-grow: 1;
+    }
+  }
+
+  .sv-ui-expansion {
+    // display: inline-flex;
+
+    @include media-breakpoint-up(sm) {
+      display: none;
     }
   }
 
   .sv-navigation-links {
     grid-area: navlinks;
     justify-content: flex-end;
+    flex-direction: column;
+    padding-top: $space-xs;
+
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+      align-items: center;
+      padding-top: 0;
+    }
+
+    .sv-navigation-link + .sv-navigation-link {
+
+      @include media-breakpoint-up(sm) {
+        margin-left: $gutter-sm;
+      }
+    }
   }
 }

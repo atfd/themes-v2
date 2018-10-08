@@ -15,27 +15,49 @@ $navigation-items-alignment: end;
 .sv-theme-document {
 
   .sv-layout {
-    grid-template-areas:
-     "navigation navigation"
-     "siteinfo contentmain"
-     "sidenav contentmain"
-     ". contentmain";
-    grid-template-columns: $sidebar-width auto;
+    // grid-template-areas:
+    //  "navigation"
+    //  "siteinfo"
+    //  "sidenav"
+    //  "contentmain";
+     // grid-template-columns: 100%;
     // grid-template-rows: $nav-height $document-sidebar-unit-height $document-sidebar-unit-height;
     // grid-auto-rows: minmax(100px, 100vh);
+
+    @include media-breakpoint-up(sm) {
+      grid-template-areas:
+       "navigation navigation"
+       "siteinfo contentmain"
+       "sidenav contentmain"
+       ". contentmain";
+      grid-template-columns: $sidebar-width auto;
+    }
   }
 
   .sv-siteinfo {
-    height: $document-sidebar-unit-height;
+
+    @include media-breakpoint-up(sm) {
+      height: $document-sidebar-unit-height;
+    }
   }
 
   .sv-sidenav {
-    height: $document-sidebar-unit-height;
-    align-items: $navigation-items-alignment;
+
+    @include media-breakpoint-up(sm) {
+      align-items: $navigation-items-alignment;
+      height: $document-sidebar-unit-height;
+    }
+
+    li {
+      margin-bottom: $space-xxs;
+    }
   }
 
   .sv-content-main {
-    grid-template-columns: $text-column-width;
-    // justify-content: center;
+
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: $text-column-width;
+    }
   }
 }

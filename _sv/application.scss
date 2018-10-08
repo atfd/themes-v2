@@ -1,3 +1,13 @@
+/*
+// imports: setup
+*/
+
+// development tools
+@import 'scss/development';
+
+// libraries
+@import 'scss/lib_normalize';
+@import 'scss/bootstrap-4.1.3/bootstrap';
 
 /*
 // global variables
@@ -11,15 +21,24 @@ $screen-lg-min:                          1200px !default;
 $screen-xl-min:                          1500px !default;
 $screen-xxl-min:                         1800px !default;
 
+// space
+$space-xxs: 5px;
+$space-xs: 10px;
+$space-sm: 20px;
+$space-md: 40px;
+$space-lg: 80px;
+$space-xl: 120px;
+$space-xxl: 160px;
+
+// layout
+$gutter-xs: $space-xs;
+$gutter-sm: $space-sm;
+
+$text-column-width: 55%;
+
 // color
 $color-black: #000;
 $color-gray: gray;
-
-// layout
-$gutter-xs: 10px;
-$gutter-sm: 20px;
-
-$text-column-width: 55%;
 
 // typography
 $font-size-base:    20px;
@@ -38,23 +57,21 @@ $line-height-base: 1.5;
 $font-color-base: $color-black;
 $font-color-disabled: $color-gray;
 
+// border
+$border-default: 1px solid $font-color-base;
+
 // navigation
 $nav-height: 50px;
 $nav-logo-size: 30px;
 $nav-logo-radius: 9999999px;
 
 /*
-// imports
+// imports: styles
 */
-
-// development tools
-@import 'scss/development';
-
-// libraries
-@import 'scss/lib_normalize';
 
 // global
 @import 'scss/global_typography';
+@import 'scss/global_ui';
 @import 'scss/global_layout';
 @import 'scss/global_nav';
 

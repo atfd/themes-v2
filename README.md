@@ -34,6 +34,7 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 + prefix/namespace `sv_custom.css` starter styles with theme
 
 <hr>
+
 ## Developing
 
 ### Dependencies
@@ -49,9 +50,22 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 - `sv-block-` – these are groups of content. For example, an image will be wrapped with `<div class="sv-block sv-block-image"></div>`
 - `sv-module-` – these are groups of interface components. For example, the side-navigation is `sv-module-sidenav`.
 
-### Themes
+<hr>
 
-##### Slideshow
+## Themes
+
+| Document  |  Feed | Slideshow  |  Ecomm |  Campaign |
+|---|---|---|---|---|
+| Logo  | Default  |   |   |   |
+| Navigation-list  | Default  |   |   |   |
+| Navigation-info  | No  |   |   |   |
+| Table of Contents  |   |   |   |   |
+| Slideshow  |   |   |   |   |
+| Main content  |   |   |   |   |
+| Reading column  |   |   |   |   |
+| Side navigation  | Yes  |   |   |   |
+
+### Slideshow
 
 Files:
 - `_sv_settings.txt` (default, required)

@@ -54,6 +54,7 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 
 ## Themes
 
+### Modules
 | Document  |  Feed | Slideshow  |  Ecomm |  Campaign |
 |---|---|---|---|---|
 | Logo  | Default  |   |   |   |
@@ -65,19 +66,25 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 | Reading column  |   |   |   |   |
 | Side navigation  | Yes  |   |   |   |
 
-### Slideshow
+### Files
 
-Files:
-- `_sv_settings.txt` (default, required)
-- `_sv_custom.css` (default)
-- `_sv_custom.js` (default)
-- `_sv_nav.txt` (default)
-- `favicon.png` (default)
-- `logo.jpg/png` (optional)
+| Document  |  Feed | Slideshow  |  Ecomm |  Campaign |  Presentation |
+|---|---|---|---|---|---|
+| `_sv_settings.txt`  | Default  |   |   |   |   |
+| `_sv_custom.css`  |   |   |   |   |   |
+| `_sv_custom.js`  |   |   |   |   |   |
+| `_sv_nav.txt`  |   |   |   |   |   |
+| `_sv_nav.txt`  |   |   |   |   |   |
+| `favicon.png`  |   |   |   |   |   |
+| `logo.jpg/png`  |   |   |   |   |   |
+| Special files  |   |   |   |   | presentation.md  |
 
 <hr>
+
 ## User docs (WIP)
-- Integrating Bootstrap or other libraries
+- [] Integrating Bootstrap or other libraries
 
 <hr>
+
 ## To do
+- [] To do

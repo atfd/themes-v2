@@ -30,7 +30,7 @@ In most cases, migrating a site will be fairly easy. You can test it by making a
 Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 
 ## Notes
-+ `_sv_reset.css`
++ `_sv_reset.css` – if you add this CSS file, you'll clear all default SV styles
 + prefix/namespace `sv_custom.css` starter styles with theme
 
 <hr>
@@ -45,19 +45,21 @@ Custom code in `_sv_custom.css` and `_sv_custom.js` may not carry over.
 
 ### Naming
 - all theme classes are prefixed with `sv-`
-- `sv-block-` – these are groups of content
-- `sv-media-` – files have class of `sv-media-*` where `*` is the file extension
-- `sv-module-` – these are groups of interface components
+- `sv-media-` – files have class of `sv-media-*` where `*` is the file extension or type
+- `sv-block-` – these are groups of content. For example, an image will be wrapped with `<div class="sv-block sv-block-image"></div>`
+- `sv-module-` – these are groups of interface components. For example, the side-navigation is `sv-module-sidenav`.
 
 ### Themes
 
 ##### Slideshow
 
-###### Files
-- `_sv_nav.txt` (optional)
-
-### Implementation notes
-- if there is a logo file, show logo nav.
+Files:
+- `_sv_settings.txt` (default, required)
+- `_sv_custom.css` (default)
+- `_sv_custom.js` (default)
+- `_sv_nav.txt` (default)
+- `favicon.png` (default)
+- `logo.jpg/png` (optional)
 
 <hr>
 ## User docs (WIP)
